@@ -1,219 +1,182 @@
 <!DOCTYPE html>
-<!-- saved from url=(0059)file:///C:/Users/richa/Downloads/menu02_fusionkeuken_2.html -->
-<html lang="nl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Menu 02 — Fusionkeuken</title>
+<title>Menu 02 - Fusionkeuken</title>
 <style>
-  * { box-sizing: border-box; margin: 0; padding: 0; }
-  body { font-family: 'Georgia', serif; background: #f5f0eb; color: #2c2c2a; }
-
-  .hero {
-    background: linear-gradient(135deg, #1a1a18 0%, #2d2a24 60%, #3a2e1e 100%);
-    padding: 60px 40px 52px; text-align: center;
-  }
-  .hero-label { font-family: Arial, sans-serif; font-size: 11px; font-weight: 700;
-    letter-spacing: 0.22em; text-transform: uppercase; color: #c9a96e; margin-bottom: 16px; }
-  .hero-title { font-size: clamp(30px,5vw,50px); font-weight: 400; color: #f5f0eb;
-    line-height: 1.2; margin-bottom: 14px; }
-  .hero-sub { font-size: 16px; color: rgba(245,240,235,0.6); font-style: italic;
-    max-width: 560px; margin: 0 auto 28px; line-height: 1.75; }
-  .tag-row { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; }
-  .tag { font-family: Arial, sans-serif; font-size: 11px; font-weight: 700;
-    padding: 5px 14px; border-radius: 30px; letter-spacing: 0.06em;
-    text-transform: uppercase; border: 1px solid; }
-  .tag-it { background: rgba(216,90,48,0.18); color: #e8835a; border-color: rgba(216,90,48,0.35); }
-  .tag-es { background: rgba(186,117,23,0.18); color: #d4a054; border-color: rgba(186,117,23,0.35); }
-  .tag-jp { background: rgba(127,119,221,0.18); color: #a49ae8; border-color: rgba(127,119,221,0.35); }
-  .tag-in { background: rgba(29,158,117,0.18); color: #5ecba5; border-color: rgba(29,158,117,0.35); }
-
-  .rule { height: 5px; background: linear-gradient(90deg,#D85A30,#BA7517,#7F77DD,#1D9E75); }
-  .container { max-width: 880px; margin: 0 auto; padding: 48px 24px 64px; }
-
-  .gang { background: #fff; border-radius: 18px; overflow: hidden; margin-bottom: 40px;
-    box-shadow: 0 3px 16px rgba(0,0,0,0.08), 0 1px 4px rgba(0,0,0,0.04); }
-  .gang-bar { display: flex; align-items: center; gap: 9px; padding: 12px 22px;
-    background: #faf8f5; border-bottom: 1px solid #ede8e0; }
-  .gang-icon { font-size: 17px; }
-  .gang-label { font-family: Arial, sans-serif; font-size: 11px; font-weight: 700;
-    letter-spacing: 0.12em; text-transform: uppercase; color: #999; }
-  .gang-tijd { margin-left: auto; font-family: Arial, sans-serif; font-size: 11px;
-    color: #bbb; background: #f0ece4; border-radius: 20px; padding: 3px 10px; }
-
-  .gang-foto { width: 100%; height: 340px; overflow: hidden; position: relative; background: #b5a898; }
-  .gang-foto img { width: 100%; height: 100%; object-fit: cover; display: block; }
-  .foto-overlay { position: absolute; inset: 0;
-    background: linear-gradient(to top, rgba(15,10,5,0.82) 0%, rgba(15,10,5,0.12) 50%, transparent 100%); }
-  .foto-caption { position: absolute; bottom: 0; left: 0; right: 0; padding: 28px 26px 22px; }
-  .foto-naam { font-size: clamp(18px,3vw,24px); font-weight: 400; color: #fff;
-    line-height: 1.3; text-shadow: 0 1px 6px rgba(0,0,0,0.6); margin-bottom: 7px; }
-  .foto-origin { font-family: Arial, sans-serif; font-size: 12px;
-    color: rgba(255,255,255,0.75); letter-spacing: 0.04em; }
-
-  .gang-desc { padding: 22px 26px 26px; font-size: 15.5px; line-height: 1.8; color: #4a4540; }
-
-  .vervanging { margin: -6px 26px 24px; background: #fff8ee;
-    border-left: 3px solid #c9a96e; border-radius: 6px; padding: 12px 16px;
-    font-family: Arial, sans-serif; font-size: 13px; color: #7a6030; line-height: 1.65; }
-  .vervanging strong { color: #5a4010; }
-
-  .tijdlijn { background: #fff; border-radius: 18px; padding: 30px 32px;
-    box-shadow: 0 3px 16px rgba(0,0,0,0.08); }
-  .tl-kop { font-family: Arial, sans-serif; font-size: 11px; font-weight: 700;
-    letter-spacing: 0.14em; text-transform: uppercase; color: #bbb; margin-bottom: 22px; }
-  .tl-item { display: flex; gap: 22px; padding: 13px 0;
-    border-bottom: 1px solid #f0ece4; align-items: flex-start; }
-  .tl-item:last-child { border-bottom: none; padding-bottom: 0; }
-  .tl-tijd { font-family: Arial, sans-serif; font-size: 12px; font-weight: 700;
-    color: #c9a96e; min-width: 100px; flex-shrink: 0; padding-top: 1px; }
-  .tl-tekst { font-size: 14px; color: #5a5550; line-height: 1.65; }
-
-  .footer { text-align: center; padding: 44px 24px 56px;
-    font-family: Arial, sans-serif; font-size: 12px; color: #c0b8ae; letter-spacing: 0.06em; }
-  .footer-rule { width: 56px; height: 2px;
-    background: linear-gradient(90deg,#D85A30,#BA7517); margin: 0 auto 20px; border-radius: 2px; }
-
-  @media (max-width: 600px) {
-    .hero { padding: 44px 20px 40px; }
-    .gang-foto { height: 240px; }
-    .container { padding: 28px 14px 48px; }
-    .tl-item { flex-direction: column; gap: 3px; }
-    .tijdlijn { padding: 22px 18px; }
-  }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: Georgia, serif; background: #f5f0eb; color: #2c2c2a; }
+.hero { background: linear-gradient(135deg, #1a1a18 0%, #2d2a24 60%, #3a2e1e 100%); padding: 60px 40px 52px; text-align: center; }
+.hero-label { font-family: Arial, sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 0.22em; text-transform: uppercase; color: #c9a96e; margin-bottom: 16px; }
+.hero-title { font-size: 46px; font-weight: 400; color: #f5f0eb; line-height: 1.2; margin-bottom: 14px; }
+.hero-sub { font-size: 16px; color: rgba(245,240,235,0.6); font-style: italic; max-width: 560px; margin: 0 auto 28px; line-height: 1.75; }
+.tag-row { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; }
+.tag { font-family: Arial, sans-serif; font-size: 11px; font-weight: 700; padding: 5px 14px; border-radius: 30px; letter-spacing: 0.06em; text-transform: uppercase; border: 1px solid; }
+.tag-it { background: rgba(216,90,48,0.18); color: #e8835a; border-color: rgba(216,90,48,0.35); }
+.tag-es { background: rgba(186,117,23,0.18); color: #d4a054; border-color: rgba(186,117,23,0.35); }
+.tag-jp { background: rgba(127,119,221,0.18); color: #a49ae8; border-color: rgba(127,119,221,0.35); }
+.tag-in { background: rgba(29,158,117,0.18); color: #5ecba5; border-color: rgba(29,158,117,0.35); }
+.rule { height: 5px; background: linear-gradient(90deg,#D85A30,#BA7517,#7F77DD,#1D9E75); }
+.container { max-width: 880px; margin: 0 auto; padding: 48px 24px 64px; }
+.gang { background: #fff; border-radius: 18px; overflow: hidden; margin-bottom: 40px; box-shadow: 0 3px 16px rgba(0,0,0,0.08); }
+.gang-bar { display: flex; align-items: center; gap: 9px; padding: 12px 22px; background: #faf8f5; border-bottom: 1px solid #ede8e0; }
+.gang-icon { font-size: 17px; }
+.gang-label { font-family: Arial, sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #999; }
+.gang-tijd { margin-left: auto; font-family: Arial, sans-serif; font-size: 11px; color: #bbb; background: #f0ece4; border-radius: 20px; padding: 3px 10px; }
+.gang-foto { width: 100%; height: 340px; overflow: hidden; position: relative; background: #b5a898; }
+.gang-foto img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.foto-overlay { position: absolute; inset: 0; background: linear-gradient(to top, rgba(15,10,5,0.82) 0%, rgba(15,10,5,0.12) 50%, transparent 100%); }
+.foto-caption { position: absolute; bottom: 0; left: 0; right: 0; padding: 28px 26px 22px; }
+.foto-naam { font-size: 22px; font-weight: 400; color: #fff; line-height: 1.3; text-shadow: 0 1px 6px rgba(0,0,0,0.6); margin-bottom: 7px; }
+.foto-origin { font-family: Arial, sans-serif; font-size: 12px; color: rgba(255,255,255,0.75); letter-spacing: 0.04em; }
+.gang-desc { padding: 22px 26px 26px; font-size: 15px; line-height: 1.8; color: #4a4540; }
+.vervanging { margin: -6px 26px 24px; background: #fff8ee; border-left: 3px solid #c9a96e; border-radius: 6px; padding: 12px 16px; font-family: Arial, sans-serif; font-size: 13px; color: #7a6030; line-height: 1.65; }
+.vervanging strong { color: #5a4010; }
+.tijdlijn { background: #fff; border-radius: 18px; padding: 30px 32px; box-shadow: 0 3px 16px rgba(0,0,0,0.08); }
+.tl-kop { font-family: Arial, sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: #bbb; margin-bottom: 22px; }
+.tl-item { display: flex; gap: 22px; padding: 13px 0; border-bottom: 1px solid #f0ece4; align-items: flex-start; }
+.tl-item:last-child { border-bottom: none; padding-bottom: 0; }
+.tl-tijd { font-family: Arial, sans-serif; font-size: 12px; font-weight: 700; color: #c9a96e; min-width: 100px; flex-shrink: 0; }
+.tl-tekst { font-size: 14px; color: #5a5550; line-height: 1.65; }
+.footer { text-align: center; padding: 44px 24px 56px; font-family: Arial, sans-serif; font-size: 12px; color: #c0b8ae; letter-spacing: 0.06em; }
+.footer-rule { width: 56px; height: 2px; background: linear-gradient(90deg,#D85A30,#BA7517); margin: 0 auto 20px; border-radius: 2px; }
+@media (max-width: 600px) {
+  .hero { padding: 44px 20px 40px; }
+  .hero-title { font-size: 30px; }
+  .gang-foto { height: 240px; }
+  .container { padding: 28px 14px 48px; }
+  .tl-item { flex-direction: column; gap: 3px; }
+  .tijdlijn { padding: 22px 18px; }
+}
 </style>
 </head>
 <body>
-
+ 
 <div class="hero">
-  <div class="hero-label">Fusionkeuken voor amateurs &nbsp;·&nbsp; 4 gangen</div>
+  <div class="hero-label">Fusionkeuken voor amateurs &nbsp;&middot;&nbsp; 4 gangen</div>
   <h1 class="hero-title">Menu 02</h1>
-  <p class="hero-sub">Mediterrane warmte ontmoet Aziatische diepte. Toegankelijke technieken, indrukwekkende smaken — alles binnen 40 minuten per gerecht.</p>
+  <p class="hero-sub">Mediterrane warmte ontmoet Aziatische diepte. Toegankelijke technieken, indrukwekkende smaken &mdash; alles binnen 40 minuten per gerecht.</p>
   <div class="tag-row">
-    <span class="tag tag-it">🇮🇹 Italiaans</span>
-    <span class="tag tag-es">🇪🇸 Spaans</span>
-    <span class="tag tag-jp">🇯🇵 Japans</span>
-    <span class="tag tag-in">🇮🇳 Indiaas</span>
+    <span class="tag tag-it">Italiaans</span>
+    <span class="tag tag-es">Spaans</span>
+    <span class="tag tag-jp">Japans</span>
+    <span class="tag tag-in">Indiaas</span>
   </div>
 </div>
 <div class="rule"></div>
-
+ 
 <div class="container">
-
-  <!-- GANG 1: AMUSE -->
+ 
   <div class="gang">
     <div class="gang-bar">
-      <span class="gang-icon">🥖</span>
-      <span class="gang-label">Gang 1 — Amuse</span>
-      <span class="gang-tijd">⏱ 20 min</span>
+      <span class="gang-icon">&#x1F956;</span>
+      <span class="gang-label">Gang 1 &mdash; Amuse</span>
+      <span class="gang-tijd">&#9200; 20 min</span>
     </div>
     <div class="gang-foto">
-      <img src="./Menu — Fusionkeuken_files/foto1.jpg" alt="Bruschetta met tomaat en basilicum">
+      <img src="foto1.jpg" alt="Bruschetta met geroosterde paprika en ansjovis">
       <div class="foto-overlay"></div>
       <div class="foto-caption">
         <div class="foto-naam">Geroosterde paprika met ansjovis, sesamolie en citroen</div>
-        <div class="foto-origin">🇮🇹 Italiaans × 🇯🇵 Japans</div>
+        <div class="foto-origin">Italiaans &times; Japans</div>
       </div>
     </div>
     <div class="gang-desc">
-      Klassiek Italiaans peperonata — geroosterde paprika's op knapperig brood — aangemaakt met een scheutje sesamolie en een paar druppels sojasaus naast de olijfolie. Die Japanse touch verdiept de umami subtiel maar opvallend. Afgewerkt met ansjovis, citroenrasp en verse basilicum.
+      Klassiek Italiaans peperonata &mdash; geroosterde paprika&apos;s op knapperig brood &mdash; aangemaakt met een scheutje sesamolie en een paar druppels sojasaus naast de olijfolie. Die Japanse touch verdiept de umami subtiel maar opvallend. Afgewerkt met ansjovis, citroenrasp en verse basilicum.
     </div>
   </div>
-
-  <!-- GANG 2: VOORGERECHT -->
+ 
   <div class="gang">
     <div class="gang-bar">
-      <span class="gang-icon">🍚</span>
-      <span class="gang-label">Gang 2 — Voorgerecht</span>
-      <span class="gang-tijd">⏱ 35 min</span>
+      <span class="gang-icon">&#x1F35A;</span>
+      <span class="gang-label">Gang 2 &mdash; Voorgerecht</span>
+      <span class="gang-tijd">&#9200; 35 min</span>
     </div>
     <div class="gang-foto">
-      <img src="./Menu — Fusionkeuken_files/foto2.jpg" alt="Saffraanrisotto alla Milanese">
+      <img src="foto2.jpg" alt="Saffraanrisotto met chorizo">
       <div class="foto-overlay"></div>
       <div class="foto-caption">
         <div class="foto-naam">Saffraanrisotto met gerookte paprika en krokante chorizo</div>
-        <div class="foto-origin">🇮🇹 Italiaans × 🇪🇸 Spaans</div>
+        <div class="foto-origin">Italiaans &times; Spaans</div>
       </div>
     </div>
     <div class="gang-desc">
       Een stevige Milanese risotto met saffraanboter, afgewerkt met blokjes krokant gebakken chorizo en gerookt paprikapoeder. De Spaanse tonen geven het gerecht een diepe, rokerige laag die de klassieke versie mist. Parmezaan en koude boter binden alles samen tot een fluweelzachte massa.
     </div>
   </div>
-
-  <!-- GANG 3: HOOFDGERECHT -->
+ 
   <div class="gang">
     <div class="gang-bar">
-      <span class="gang-icon">🍗</span>
-      <span class="gang-label">Gang 3 — Hoofdgerecht</span>
-      <span class="gang-tijd">⏱ 40 min</span>
+      <span class="gang-icon">&#x1F357;</span>
+      <span class="gang-label">Gang 3 &mdash; Hoofdgerecht</span>
+      <span class="gang-tijd">&#9200; 40 min</span>
     </div>
     <div class="gang-foto">
-      <img src="file:///C:/Users/richa/Downloads/foto3.jpg" alt="Geroosterde kip op schaal">
+      <img src="foto3.jpg" alt="Gekruide kippenbouten uit de oven">
       <div class="foto-overlay"></div>
       <div class="foto-caption">
         <div class="foto-naam">Gekruide kippenbouten met garam masala, romesco en kikkererwten</div>
-        <div class="foto-origin">🇪🇸 Spaans × 🇮🇳 Indiaas</div>
+        <div class="foto-origin">Spaans &times; Indiaas</div>
       </div>
     </div>
     <div class="gang-desc">
-      Kippenbouten ingesmeerd met garam masala, knoflook en citroen — dan in een hete oven tot ze knapperig en sappig zijn. Geserveerd met een romesco-saus en krokante kikkererwten met kurkuma. Dezelfde rijke smaakbrug als een lamsschouder, maar klaar in een fractie van de tijd.
+      Kippenbouten ingesmeerd met garam masala, knoflook en citroen &mdash; dan in een hete oven tot ze knapperig en sappig zijn. Geserveerd met een romesco-saus en krokante kikkererwten met kurkuma. Dezelfde rijke smaakbrug als een lamsschouder, maar klaar in een fractie van de tijd.
     </div>
     <div class="vervanging">
-      <strong>↩ Vervangt de lamsschouder van 3 uur</strong> — exact dezelfde fusionsmaken van Spaans romesco en Indiase specerijen, maar de kippenbouten zijn klaar in 40 minuten. De hoge oventemperatuur geeft bovendien een indrukwekkend krokant vel.
+      <strong>&#x21A9; Vervangt de lamsschouder van 3 uur</strong> &mdash; exact dezelfde fusionsmaken van Spaans romesco en Indiase specerijen, maar de kippenbouten zijn klaar in 40 minuten. De hoge oventemperatuur geeft bovendien een indrukwekkend krokant vel.
     </div>
   </div>
-
-  <!-- GANG 4: DESSERT -->
+ 
   <div class="gang">
     <div class="gang-bar">
-      <span class="gang-icon">🥭</span>
-      <span class="gang-label">Gang 4 — Dessert</span>
-      <span class="gang-tijd">⏱ 15 min + opstijven</span>
+      <span class="gang-icon">&#x1F96D;</span>
+      <span class="gang-label">Gang 4 &mdash; Dessert</span>
+      <span class="gang-tijd">&#9200; 15 min + opstijven</span>
     </div>
     <div class="gang-foto">
-      <img src="./Menu — Fusionkeuken_files/foto4.jpg" alt="Panna cotta met saus">
+      <img src="foto4.jpg" alt="Panna cotta met mangocoulis en pistache">
       <div class="foto-overlay"></div>
       <div class="foto-caption">
         <div class="foto-naam">Panna cotta met kardemom, mangocoulis en pistache</div>
-        <div class="foto-origin">🇮🇹 Italiaans × 🇮🇳 Indiaas</div>
+        <div class="foto-origin">Italiaans &times; Indiaas</div>
       </div>
     </div>
     <div class="gang-desc">
-      Klassieke Italiaanse panna cotta geparfumeerd met groene kardemom in plaats van vanille. Geserveerd met een eenvoudige mangocoulis van verse of diepvriesmango met limoen, en gehakte pistachenoten voor de crunch. Fris, romig en verrassend verfijnd — het perfecte slot na de stevige hoofdgang.
+      Klassieke Italiaanse panna cotta geparfumeerd met groene kardemom in plaats van vanille. Geserveerd met een eenvoudige mangocoulis van verse of diepvriesmango met limoen, en gehakte pistachenoten voor de crunch. Fris, romig en verrassend verfijnd &mdash; het perfecte slot na de stevige hoofdgang.
     </div>
   </div>
-
-  <!-- TIJDLIJN -->
+ 
   <div class="tijdlijn">
-    <div class="tl-kop">⏱ Bereidingstijdlijn voor de avond</div>
+    <div class="tl-kop">&#9200; Bereidingstijdlijn voor de avond</div>
     <div class="tl-item">
       <div class="tl-tijd">Dag ervoor</div>
-      <div class="tl-tekst">Panna cotta maken en laten opstijven &nbsp;·&nbsp; Kip marineren &nbsp;·&nbsp; Paprika's roosteren voor de amuse</div>
+      <div class="tl-tekst">Panna cotta maken en laten opstijven &nbsp;&middot;&nbsp; Kip marineren &nbsp;&middot;&nbsp; Paprika&apos;s roosteren voor de amuse</div>
     </div>
     <div class="tl-item">
       <div class="tl-tijd">2 uur voor</div>
-      <div class="tl-tekst">Mangocoulis maken en koud wegzetten &nbsp;·&nbsp; Romesco-saus op kamertemperatuur brengen</div>
+      <div class="tl-tekst">Mangocoulis maken en koud wegzetten &nbsp;&middot;&nbsp; Romesco-saus op kamertemperatuur brengen</div>
     </div>
     <div class="tl-item">
       <div class="tl-tijd">60 min voor</div>
-      <div class="tl-tekst">Kip en kikkererwten de oven in (220°C) &nbsp;·&nbsp; Bouillon voor risotto opzetten</div>
+      <div class="tl-tekst">Kip en kikkererwten de oven in (220&deg;C) &nbsp;&middot;&nbsp; Bouillon voor risotto opzetten</div>
     </div>
     <div class="tl-item">
       <div class="tl-tijd">25 min voor</div>
-      <div class="tl-tekst">Amuse opmaken op borden &nbsp;·&nbsp; Chorizo krokant bakken &nbsp;·&nbsp; Risotto starten</div>
+      <div class="tl-tekst">Amuse opmaken op borden &nbsp;&middot;&nbsp; Chorizo krokant bakken &nbsp;&middot;&nbsp; Risotto starten</div>
     </div>
     <div class="tl-item">
       <div class="tl-tijd">Bij opdienen</div>
-      <div class="tl-tekst">Amuse serveren → risotto afmaken en serveren → kip uit de oven opmaken → dessert uit de koelkast</div>
+      <div class="tl-tekst">Amuse serveren &rarr; risotto afmaken en serveren &rarr; kip uit de oven opmaken &rarr; dessert uit de koelkast</div>
     </div>
   </div>
-
+ 
 </div>
-
+ 
 <div class="footer">
   <div class="footer-rule"></div>
-  Menu 02 &nbsp;·&nbsp; Fusionkeuken voor amateurs &nbsp;·&nbsp; Italiaans × Spaans × Japans × Indiaas
+  Menu 02 &nbsp;&middot;&nbsp; Fusionkeuken voor amateurs &nbsp;&middot;&nbsp; Italiaans &times; Spaans &times; Japans &times; Indiaas
 </div>
-
-
-
-</body></html>
+ 
+</body>
+</html>
